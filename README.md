@@ -22,12 +22,12 @@
 ## 📌 About This Project
 - Analyzed **93K+ customers & 96K orders** to uncover churn drivers and retention opportunities.  
 - Built a **4-phase analytics pipeline**: Descriptive (RFM & CLV) → Diagnostic (Cohorts & Churn) → Predictive (ML Models) → Prescriptive (ROI-based strategies).  
-- Delivered **business-ready outputs**: customer segments, churn predictions, executive dashboards, and ROI-driven interventions (projected **R$1.1–2.3B revenue protection**).
+- Delivered **business-ready outputs**: customer segments, churn predictions, executive dashboards, and ROI-driven interventions (projected **R$1.1–2.3M revenue protection**).
 
 ---
 
 ## ⚡ TL;DR
-This project shows how advanced analytics can **save billions in at-risk revenue** by identifying churn, predicting high-risk customers, and recommending ROI-focused retention actions.  
+This project shows how advanced analytics can **save millions in at-risk revenue** by identifying churn, predicting high-risk customers, and recommending ROI-focused retention actions.  
 It combines **data engineering, analytics, ML, and business storytelling** into a single portfolio case study.
 
 ---
@@ -37,7 +37,7 @@ It combines **data engineering, analytics, ML, and business storytelling** into 
 ### 1️⃣ Descriptive Analytics — *What happened?*
 - Segmented **93K customers** with RFM (9 groups).  
 - Found **59% churn rate** and **3% repeat purchase rate**.  
-- Calculated **Avg CLV: R$173,858**.  
+- Calculated **Avg CLV ≈ R$180 per customer (VIPs >R$5K)**.  
 *Outputs:* `rfm_analysis_results.csv`, `segment_summary.csv`
 
 ### 2️⃣ Diagnostic Analytics — *Why did it happen?*
@@ -49,7 +49,7 @@ It combines **data engineering, analytics, ML, and business storytelling** into 
 ### 3️⃣ Predictive Analytics — *What will happen?*
 - Built multiple models → **Logistic Regression selected** (73.85% accuracy, F1 84.9%).  
 - **Top churn drivers:** monetary value, engagement, days between purchases, avg order value, frequency.  
-- Predicted **30,475 high-risk customers** (R$5.7B CLV at risk).  
+- Predicted **30,475 high-risk customers** (~R$5.7M CLV at risk).  
 *Outputs:* `churn_predictions_improved.csv`, `priority_intervention_list.csv`
 
 ### 4️⃣ Prescriptive Analytics — *What should we do?*
@@ -64,15 +64,15 @@ It combines **data engineering, analytics, ML, and business storytelling** into 
 
 ### 💼 Business Wins
 - Identified a **59% churn rate** (major retention problem).  
-- Flagged **30K+ high-risk customers** — **R$5.7B CLV** at risk.  
+- Flagged **30K+ high-risk customers** — ~**R$5.7M CLV** at risk.  
 - Designed ROI-driven interventions: **225 VIPs** (immediate outreach), **30K** (automated campaigns).  
-- Projected **R$1.1–2.3B** in protected revenue with targeted actions.
+- Projected **R$1.1–2.3M** in protected revenue with targeted actions.
 
 ### 📊 Customer Metrics
 - **Customers analyzed:** 93,358  
 - **Repeat rate:** 3% (very low)  
 - **High-risk:** ~80% of active customers  
-- **Avg CLV:** R$173,858
+- **Avg CLV:** ≈R$180 per customer (VIPs >R$5K)  
 
 ### 🧪 Model Performance
 - **Logistic Regression (final)**  
@@ -125,5 +125,3 @@ It combines **data engineering, analytics, ML, and business storytelling** into 
 📧 mr.abdulrahmanbadry@gmail.com  
 LinkedIn: https://www.linkedin.com/in/badryxo  
 GitHub: https://github.com/mrbadry-eg
-
----
