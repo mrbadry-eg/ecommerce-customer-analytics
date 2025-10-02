@@ -1,4 +1,3 @@
-
 # 📄 Executive Summary  
 
 ## E-Commerce Customer Analytics Project  
@@ -8,43 +7,43 @@
 ---
 
 ### 🎯 Objective  
-To analyze customer behavior, identify churn risks, and design data-driven retention strategies that protect revenue and drive loyalty.  
+To analyze customer behavior, identify churn risks, and design retention strategies that protect revenue and drive loyalty.  
 
 ---
 
 ### 🔍 Key Findings  
-- **Customer Segmentation (RFM & CLV):**  
-  - Champions: 7% of customers  
+- **Segmentation (RFM & CLV):**  
+  - Champions: 7%  
   - At Risk: 14.1%  
   - Potential Loyalists: 29%  
-  - Average Customer Lifetime Value: **R$173,858**  
+  - Avg CLV: ≈R$180 per customer (VIPs >R$5K)  
 
-- **Churn & Retention Insights:**  
-  - Overall churn rate: **59.2%**  
-  - Cohort analysis: **99.7% drop-off within 3 months**  
-  - Only **3%** of customers make a repeat purchase (average 81 days)  
+- **Churn & Retention:**  
+  - 59.2% overall churn rate  
+  - 99.7% drop-off in 3 months  
+  - Only 3% repeat purchase rate  
 
 - **Predictive Modeling:**  
-  - Logistic Regression: **73.9% accuracy, ROC-AUC = 0.64**  
-  - Identified **30,475 high-risk customers**  
-  - **R$5.7B CLV at risk**  
+  - Logistic Regression (73.9% accuracy, F1 = 84.9%)  
+  - Identified 30,475 high-risk customers  
+  - ≈R$5.7M CLV at risk  
 
 ---
 
 ### 💡 Business Impact  
-- **Critical-risk group (225 customers):** Immediate outreach required  
-- **High-risk group (30,475 customers):** R$5.7B CLV exposed  
-- **Retention ROI:** Projected **20–40% churn reduction** → R$1.1–2.3B in protected revenue  
+- **225 VIPs:** immediate outreach  
+- **30K high-risk customers:** automated campaigns  
+- **Protected revenue:** ≈R$1.1–2.3M (20–40% churn reduction)  
 
 ---
 
 ### 📈 Strategic Recommendations  
-- **Immediate (Weeks 1–2):** Personalized outreach to 225 critical-risk customers  
-- **Short Term (Month 1):** Launch automated campaigns targeting 30,475 high-risk customers  
-- **Mid Term (Month 2):** Implement loyalty program for Potential Loyalists  
-- **Ongoing:** Monitor KPIs, run A/B tests, optimize retention campaigns  
+- Weeks 1–2: personalized outreach to VIPs  
+- Month 1: automated high-risk campaigns  
+- Month 2: loyalty program for Potential Loyalists  
+- Ongoing: monitor, A/B test, optimize  
 
 ---
 
 ### ✅ Outcome  
-This project translates raw data into **actionable business intelligence**, balancing **analytics, machine learning, and ROI-driven strategy**.  
+This project converts raw data into **actionable business intelligence**, balancing analytics, ML, and ROI-driven strategy.  
