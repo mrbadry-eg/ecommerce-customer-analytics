@@ -1,85 +1,65 @@
-
 # 📑 Technical Documentation  
 
 ## Project: E-Commerce Customer Analytics  
-**Language & Tools:** Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebooks  
-**Deliverables:** RFM results, churn predictions, executive dashboard, technical pipeline  
+**Tools:** Python (Pandas, Scikit-learn, Matplotlib, Seaborn, Plotly), Jupyter  
+**Deliverables:** RFM results, churn predictions, dashboards, technical pipeline  
 
 ---
 
 ### 1. Data Sources & Preparation  
-- Dataset: Olist Brazilian E-Commerce Public Dataset (Kaggle)  
-- Files: orders, customers, order_items, payments, reviews, products, geolocation  
-- Data Cleaning Steps:  
-  - Missing value treatment  
-  - Data type conversions (dates, floats, categories)  
-  - Merge across multiple tables (customer → order → item → payment → review)  
-  - Deduplication & quality checks  
+- Dataset: Olist (Kaggle)  
+- Files: orders, customers, items, payments, reviews, products, geolocation  
+- Steps: missing values handled, dtype fixes, table merges, deduplication  
 
 ---
 
 ### 2. Descriptive Analytics  
-**RFM Segmentation:**  
-- Recency: Days since last purchase  
-- Frequency: Number of purchases per customer  
-- Monetary: Total spend  
-- Scoring: Quartile-based (1–4) → Segmentation into 9 groups (Champions, Loyal, At Risk, Lost, etc.)  
-
-**Customer Lifetime Value (CLV):**  
-- CLV = (Average Order Value × Purchase Frequency × Gross Margin × Time Horizon)  
+- **RFM Segmentation:** quartile scoring → 9 groups (Champions, Loyal, At Risk, Lost, etc.)  
+- **CLV:**  
+  - Avg CLV ≈R$180 per customer  
+  - VIPs >R$5K  
+  - Total CLV ≈R$17–23M  
 
 ---
 
 ### 3. Diagnostic Analytics  
-- **Churn Analysis:** Defined churned customers as those inactive for 6+ months  
-- **Cohort Analysis:** Built monthly cohorts by acquisition month, tracked retention over time  
-- **Repeat Purchase Analysis:** Time between first and second purchase (avg 81 days)  
+- Churn = inactivity >180 days  
+- Cohort analysis: 99.7% drop-off within 3 months  
+- Avg time between first & second purchase: 81 days  
 
 ---
 
 ### 4. Predictive Analytics  
-**Modeling Objective:** Predict churn risk for active customers  
-
-- Features engineered: Recency, Frequency, Monetary, days since first purchase, review scores, payment types  
-- Model: Logistic Regression (baseline for interpretability)  
-- Training/Test Split: 70/30  
-- Performance Metrics:  
-  - Accuracy: 73.85%  
-  - ROC-AUC: 0.64  
-  - Precision-Recall tradeoffs evaluated  
-- Outputs: churn_predictions_improved.csv, logistic_regression_model.pkl  
+- Model: Logistic Regression (70/30 split)  
+- Features: Recency, Frequency, Monetary, days active, reviews, payments  
+- Metrics: Accuracy 73.9%, F1 84.9%, ROC-AUC 0.64  
+- Findings: 30,475 high-risk customers ≈R$5.7M CLV at risk  
 
 ---
 
 ### 5. Prescriptive Analytics  
-**Action Plan Development:**  
-- Segment-level strategy mapping (Champions vs At Risk vs Lost)  
-- ROI-based prioritization → high-value at-risk customers first  
-- Projected retention uplift: 20–40%  
-- Dashboard: Executive view summarizing segments, risks, and financial impact  
+- ROI-driven strategy: prioritize VIP & high-risk  
+- Retention uplift: 20–40%  
+- Protected revenue: ≈R$1.1–2.3M  
 
 ---
 
 ### 6. Deliverables  
-- **Data Files:** RFM results, churn analysis, predictions, intervention list  
-- **Visuals:** 10+ analytical plots, executive dashboard screenshot  
-- **Models:** Logistic regression pickle file, feature scaler  
-- **Documentation:** Executive Summary (business), Technical Documentation (methodology), README (portfolio)  
+- **Data:** RFM outputs, churn analysis, predictions, intervention list  
+- **Visuals:** 10+ plots + executive dashboard  
+- **Models:** Logistic Regression (pickle), scaler  
+- **Docs:** Exec Summary, Technical Docs, README  
 
 ---
 
 ### 7. Limitations & Assumptions  
-- Assumes churn defined as **180 days of inactivity**  
-- Predictive model trained only on historical data (2016–2018)  
-- ROI estimates depend on implementation effectiveness  
+- Churn = 180+ days inactivity  
+- Historical data only (2016–2018)  
+- ROI depends on implementation quality  
 
 ---
 
 ### 8. Reproducibility  
-- Full code available in repository (Jupyter notebooks + .py scripts)  
-- Data preprocessing and modeling steps documented end-to-end  
-- Models & scalers saved for production use  
-
----
-
-✅ **This documentation ensures technical transparency and reproducibility, while the Executive Summary communicates business value to stakeholders.**  
+- Code: Jupyter notebooks + scripts  
+- Models & scalers saved  
+- End-to-end preprocessing documented  
